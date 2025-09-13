@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #fafafa;
+    color: #222;
+}
+header, main {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+h1, h2 { text-align: center
+}   
+
+h3 { text-align: left
+}
+
+p { text-align: center
+} 
+
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    text-align: center;
+}
+
+.logo, .footer-logo {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+}
+.hero {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.grid {
+    display: flex;
+    gap: 20px;
+    margin: 30px 0;
+}
+.grid > div {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 8px #eee;
+}
+.grid img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px 50px 50px 50px;
+    background: #f0f0f0;
+    margin-top: 40px;
+}
+
+.footer-text {
+    margin-left: 20px;
+}
+.footer-menu ul {
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+.footer-menu a {
+    color: #222;
+    text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .grid {
+        flex-direction: column;
+    }
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.noticia-caja {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #eee;
+    margin-bottom: 20px;
+    gap: 15px;
+    text-align: center;
+}
+
+.noticia-contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.vacaciones-form-img {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+}
+
+
+
+.vacaciones-img img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
