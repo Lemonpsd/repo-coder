@@ -71,14 +71,14 @@ nav a {
 }
 .grid > div {
     background: #fff;
-    padding: 15px;
+    padding: 5px;
     border-radius: 8px;
     text-align: center;
     box-shadow: 0 2px 8px #eee;
 }
 .grid img {
     width: 100%;
-    height: 120px;
+    height: 220px;
     object-fit: cover;
     border-radius: 6px;
     margin-top: 10px;
@@ -96,7 +96,7 @@ footer {
 .footer-text {
     margin-left: 20px;
 }
-.footer-menu ul {
+.footer-menu ul {    
     gap: 8px;
     margin: 0;
     padding: 0;
@@ -127,16 +127,12 @@ footer {
 }
 
 .noticia-contenido {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 
 .vacaciones-form-img {
-    display: flex;
-    align-items: flex-start;
     justify-content: center;
     gap: 40px;
     margin-top: 50px;
