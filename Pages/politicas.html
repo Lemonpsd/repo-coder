@@ -1,60 +1,191 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <title>Políticas y Procedimientos</title>
     <link rel="stylesheet" href="../css/styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
     <header>
         <div class="logo"><a href="./index.html">LOGO</a></div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./Pages/noticias.html">Noticias</a></li>
-                <li><a href="./Pages/politicas.html">Políticas</a></li>
-                <li><a href="./Pages/beneficios.html">Beneficios</a></li>
-                <li><a href="./Pages/solicitudes.html">Solicitudes</a></li>
-                <li><a href="./Pages/vacaciones.html">Vacaciones</a></li>
-            </ul>
+
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item"> <a class="nav-link active" aria-current="page"
+                                href="../index.html">Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./noticias.html">Noticias</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./politicas.html">Políticas</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./beneficios.html">Beneficios</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./solicitudes.html">Solicitudes</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="./vacaciones.html">Vacaciones</a> </li>
+
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-    <main>
+    <main style="margin-top: 2vh;">
         <section class="hero">
             <h2 class="hero-title">POLÍTICAS Y PROCEDIMIENTOS</h2>
             <img src="../img/hero-politicas.jpg" alt="Hero Políticas">
         </section>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, nec dictum nisi nisl euismod enim.</p>
+
+        <p style="margin-top: 5vh; margin-bottom: 5vh;">Políticas y procedimientos, para que nuestros trabajadores estén
+            en regla, como debe ser 📏🔫</p>
+
         <div class="grid" style="align-items: center; justify-content: center;">
-            <div><img src="../img/placeholder.jpg" alt="Política 1"></div>
-            <div><img src="../img/placeholder.jpg" alt="Política 2"></div>
-            <div><img src="../img/placeholder.jpg" alt="Política 3"></div>
+            <div><img src="../img/politicas.jpg" alt="Política 1">
+
+                <button type="button" class="btn btn-primary" data-bs-toggle="popover" style="margin: 10px 0px 10px 0px;"
+                    data-bs-title="Política 1" data-bs-content="Este es el contenido de la política">
+                    Haz clic para ver política
+                </button>
+
+                <!-- Scripts de Bootstrap (Popper incluido) -->
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+                <!-- Inicialización de todos los popovers -->
+                <script>
+                    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+                    const popoverList = [...popoverTriggerList].map(
+                        popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl)
+                    )
+                </script>
+                <!-- Lo de arriba gracias al todo poderoso ChatGPT porque me bloquee mal y lo queria poner -->
+
+            </div>
+            <div><img src="../img/politicas.jpg" alt="Política 2">
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="popover1" style="margin: 10px 0px 10px 0px;"
+                    data-bs-title="Política 2" data-bs-content="Este es el contenido de la política">
+                    Haz clic para ver política
+                </button>
+
+                <script>
+                    const popover1TriggerList = document.querySelectorAll('[data-bs-toggle="popover1"]')
+                    const popover1List = [...popover1TriggerList].map(
+                        popover1TriggerEl => new bootstrap.Popover(popover1TriggerEl)
+                    )
+                </script>
+                
+
+            </div>
+            <div><img src="../img/politicas.jpg" alt="Política 3">
+            
+                <button type="button" class="btn btn-primary" data-bs-toggle="popover2" style="margin: 10px 0px 10px 0px;"
+                    data-bs-title="Política 3" data-bs-content="Este es el contenido de la política">
+                    Haz clic para ver política
+                </button>
+
+                <script>
+                    const popover2TriggerList = document.querySelectorAll('[data-bs-toggle="popover2"]')
+                    const popover2List = [...popover2TriggerList].map(
+                        popover2TriggerEl => new bootstrap.Popover(popover2TriggerEl)
+                    )
+                </script>
+            
+            </div>
         </div>
         <div class="grid" style="align-items: center; justify-content: center;">
-            <div><img src="../img/placeholder.jpg" alt="Política 4"></div>
-            <div><img src="../img/placeholder.jpg" alt="Política 5"></div>
-            <div><img src="../img/placeholder.jpg" alt="Política 6"></div>
+
+            <div><img src="../img/politicas.jpg" alt="Política 4">
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="popover3" style="margin: 10px 0px 10px 0px;"
+                    data-bs-title="Política 4" data-bs-content="Este es el contenido de la política">
+                    Haz clic para ver política
+                </button>
+
+                <script>
+                    const popover3TriggerList = document.querySelectorAll('[data-bs-toggle="popover3"]')
+                    const popover3List = [...popover3TriggerList].map(
+                        popover3TriggerEl => new bootstrap.Popover(popover3TriggerEl)
+                    )
+                </script>
+            
+            </div>
+
+
+            <div><img src="../img/politicas.jpg" alt="Política 5">
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="popover4" style="margin: 10px 0px 10px 0px;"
+                    data-bs-title="Política 5" data-bs-content="Este es el contenido de la política">
+                    Haz clic para ver política
+                </button>
+
+                <script>
+                    const popover4TriggerList = document.querySelectorAll('[data-bs-toggle="popover4"]')
+                    const popover4List = [...popover4TriggerList].map(
+                        popover4TriggerEl => new bootstrap.Popover(popover4TriggerEl)
+                    )
+                </script>
+            
+            </div>
+
+
+            <div><img src="../img/politicas.jpg" alt="Política 6">
+            
+            <button type="button" class="btn btn-primary" data-bs-toggle="popover5" style="margin: 10px 0px 10px 0px;"
+                    data-bs-title="Política 6" data-bs-content="Este es el contenido de la política">
+                    Haz clic para ver política
+                </button>
+
+                <script>
+                    const popover5TriggerList = document.querySelectorAll('[data-bs-toggle="popover5"]')
+                    const popover5List = [...popover5TriggerList].map(
+                        popover5TriggerEl => new bootstrap.Popover(popover5TriggerEl)
+                    )
+                </script>
+            
+            </div>
         </div>
     </main>
     <footer>
-        <div class="footer-logo">LOGO</div>
-        <div class="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
-        <nav class="footer-menu">
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="./noticias.html">Noticias</a></li>
-                <li><a href="./politicas.html">Políticas</a></li>
-                <li><a href="./beneficios.html">Beneficios</a></li>
-                <li><a href="./solicitudes.html">Solicitudes</a></li>
-                <li><a href="./vacaciones.html">Vacaciones</a></li>
-            </ul>
-        </nav>
-        <div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18867.079829336464!2d-75.56616693068261!3d6.222137171746717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429c54fe5652d%3A0x5363838972b34e50!2sAeropuerto%20Olaya%20Herrera!5e0!3m2!1ses-419!2sco!4v1755317594907!5m2!1ses-419!2sco" width="300" height="150" style="border:0;"></iframe>
+        <div class="footer-div">
+            <div class="logo"><a href="./index.html">LOGO</a></div>
+            <div class="footer-text">
+                Somos tu socio estratégico en tercerización, ofreciendo soluciones flexibles y
+                confiables que optimizan tus procesos y fortalecen la relación con tus clientes.
+            </div>
+            <nav class="footer-menu">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./noticias.html">Noticias</a></li>
+                    <li><a href="./politicas.html">Políticas</a></li>
+                    <li><a href="./beneficios.html">Beneficios</a></li>
+                    <li><a href="./solicitudes.html">Solicitudes</a></li>
+                    <li><a href="./vacaciones.html">Vacaciones</a></li>
+                </ul>
+            </nav>
+            <div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18867.079829336464!2d-75.56616693068261!3d6.222137171746717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429c54fe5652d%3A0x5363838972b34e50!2sAeropuerto%20Olaya%20Herrera!5e0!3m2!1ses-419!2sco!4v1755317594907!5m2!1ses-419!2sco"
+                    width="300" height="150" style="border:0;"></iframe>
+            </div>
+        </div>
+
+        <!-- Barra Copyright separada -->
+        <div class="footer-bottom">
+            <p>&copy; 2025 Empresa Dummy de Tercerización para Coder lol. Todos los derechos reservados.</p>
         </div>
     </footer>
 </body>
+
 </html>
