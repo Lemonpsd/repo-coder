@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f6fcff !important;
+}
+
+header,
+main {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h3 {
+  text-align: left;
+}
+
+p {
+  text-align: center;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+  text-align: center;
+
+  &:hover {
+    background: darken(#007bff, 10%);
+  }
+}

@@ -1,0 +1,14 @@
+.hero {
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
